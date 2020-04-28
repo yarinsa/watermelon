@@ -4,11 +4,12 @@ import session from "express-session";
 import { apolloServer } from "./apollo";
 import cors from "cors";
 import path from "path";
+import bodyParser from "body-parser";
 const app = express();
 const http = require("http").createServer(app);
 
 app.use(cookieParser());
-
+app.use(bodyParser.json());
 app.use(
   session({
     secret: "keyboard cat",
