@@ -46,7 +46,6 @@
     "@graphql-codegen/typescript": "1.13.3",
     "@graphql-codegen/typescript-resolvers": "1.13.3",
     "@types/express": "^4.17.6",
-    "graphql-import": "^1.0.2",
     "ts-loader": "^7.0.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "tslint": "^6.1.1",
