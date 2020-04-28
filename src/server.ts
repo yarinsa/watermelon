@@ -18,6 +18,7 @@ app.use(
     cookie: { secure: false },
   })
 );
+apolloServer.applyMiddleware({ app });
 
 app.use(express.static(__dirname));
 app.use(express.static(path.resolve(__dirname, "build")));
@@ -35,8 +36,6 @@ app.post("/ping2", function (req, res) {
   console.log(" just got pingged 2!");
   return res.send("pong2");
 });
-
-apolloServer.applyMiddleware({ app });
 
 const port = process.env.PORT || 3030;
 http.listen(port, () => {
