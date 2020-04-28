@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57a8882f.chunk.css",
+    "main.js": "/static/js/main.751944ce.chunk.js",
+    "main.js.map": "/static/js/main.751944ce.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f10ced8d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f10ced8d.js.map",
+    "static/js/2.2f54f6fd.chunk.js": "/static/js/2.2f54f6fd.chunk.js",
+    "static/js/2.2f54f6fd.chunk.js.map": "/static/js/2.2f54f6fd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.17d8162b42370b51cd0af3e7aecb73ea.js": "/precache-manifest.17d8162b42370b51cd0af3e7aecb73ea.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.57a8882f.chunk.css.map": "/static/css/main.57a8882f.chunk.css.map",
+    "static/js/2.2f54f6fd.chunk.js.LICENSE.txt": "/static/js/2.2f54f6fd.chunk.js.LICENSE.txt",
+    "static/media/EllipsisLoader.61abf75d.svg": "/static/media/EllipsisLoader.61abf75d.svg",
+    "static/media/Loader.aac50178.svg": "/static/media/Loader.aac50178.svg",
+    "static/media/_index.scss": "/static/media/SF-UI-Text-Bold.669ebc92.ttf",
+    "static/media/watermelon.fa7d03ee.svg": "/static/media/watermelon.fa7d03ee.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f10ced8d.js",
+    "static/js/2.2f54f6fd.chunk.js",
+    "static/css/main.57a8882f.chunk.css",
+    "static/js/main.751944ce.chunk.js"
+  ]
+}
