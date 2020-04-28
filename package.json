@@ -4,7 +4,7 @@
   "main": "server.ts",
   "license": "MIT",
   "scripts": {
-    "start": "codegen ts-node src/server.ts",
+    "start": "ts-node src/server.ts",
     "dev": "ts-node-dev src/server.ts",
     "codegen": "graphql-codegen",
     "codegen:watch": "graphql-codegen --watch"
