@@ -27,6 +27,11 @@ app.get("/*", (req, res) => {
 app.get("/ping", function (req, res) {
   return res.send("pong");
 });
+
+app.post("/ping2", function (req, res) {
+  return res.send("pong2");
+});
+
 apolloServer.applyMiddleware({ app });
 
 const port = process.env.PORT || 3030;
