@@ -17,7 +17,6 @@ app.use(
     cookie: { secure: false },
   })
 );
-app.use(cors());
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, "../build")));
 
