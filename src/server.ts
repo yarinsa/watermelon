@@ -18,11 +18,16 @@ app.use(
   })
 );
 app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, "../build")));
+app.use(express.static(path.join(__dirname, "build")));
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../build", "index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
+
+app.get("/ping", function (req, res) {
+  return res.send("pong");
+});
+
 apolloServer.applyMiddleware({ app });
 
 const port = process.env.PORT || 3030;
