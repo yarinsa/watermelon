@@ -9,6 +9,9 @@
     "codegen": "graphql-codegen",
     "codegen:watch": "graphql-codegen --watch"
   },
+  "engines": {
+    "yarn": "1.x"
+  },
   "dependencies": {
     "@graphql-codegen/add": "^1.13.3",
     "@types/cookie-parser": "^1.4.2",

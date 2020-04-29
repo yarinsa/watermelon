@@ -10,14 +10,7 @@ const http = require("http").createServer(app);
 
 app.use(cookieParser());
 app.use(bodyParser.json());
-app.use(
-  session({
-    secret: "keyboard cat",
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: false },
-  })
-);
+
 apolloServer.applyMiddleware({ app });
 
 app.use(express.static(__dirname));

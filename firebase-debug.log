@@ -1,0 +1,156 @@
+[debug] [2020-04-28T16:15:46.065Z] ----------------------------------------------------------------------
+[debug] [2020-04-28T16:15:46.067Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-28T16:15:46.067Z] CLI Version:   8.2.0
+[debug] [2020-04-28T16:15:46.067Z] Platform:      win32
+[debug] [2020-04-28T16:15:46.067Z] Node Version:  v12.16.1
+[debug] [2020-04-28T16:15:46.068Z] Time:          Tue Apr 28 2020 19:15:46 GMT+0300 (Israel Daylight Time)
+[debug] [2020-04-28T16:15:46.069Z] ----------------------------------------------------------------------
+[debug] [2020-04-28T16:15:46.069Z] 
+[debug] [2020-04-28T16:15:46.077Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-28T16:15:46.078Z] > authorizing via signed-in user
+[debug] [2020-04-28T16:15:46.078Z] [iam] checking project watermelon-market for permissions ["firebase.projects.get"]
+[debug] [2020-04-28T16:15:46.081Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/watermelon-market:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-28T16:15:47.163Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:15:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=654","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-28T16:15:47.166Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/watermelon-market  
+ 
+[debug] [2020-04-28T16:15:47.655Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:15:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Coding Academy\robinhood\backend'...
+[info] 
+[debug] [2020-04-28T16:15:47.668Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/watermelon-market/webApps/-/config  
+ 
+[debug] [2020-04-28T16:15:49.438Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:15:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-04-28T16:15:50.717Z] Error: Cannot find module 'D:\Coding Academy\robinhood\backend\functions\package.json'
+Require stack:
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at FunctionsEmulator.<anonymous> (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:345:25)
+    at Generator.next (<anonymous>)
+    at C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:4:12)
+    at FunctionsEmulator.askInstallNodeVersion (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:344:16)
+    at FunctionsEmulator.<anonymous> (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:104:42)
+    at Generator.next (<anonymous>)
+    at C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:4:12)
+    at FunctionsEmulator.start (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:103:16)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-28T16:16:36.477Z] ----------------------------------------------------------------------
+[debug] [2020-04-28T16:16:36.479Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-28T16:16:36.479Z] CLI Version:   8.2.0
+[debug] [2020-04-28T16:16:36.479Z] Platform:      win32
+[debug] [2020-04-28T16:16:36.479Z] Node Version:  v12.16.1
+[debug] [2020-04-28T16:16:36.480Z] Time:          Tue Apr 28 2020 19:16:36 GMT+0300 (Israel Daylight Time)
+[debug] [2020-04-28T16:16:36.481Z] ----------------------------------------------------------------------
+[debug] [2020-04-28T16:16:36.481Z] 
+[debug] [2020-04-28T16:16:36.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-28T16:16:36.489Z] > authorizing via signed-in user
+[debug] [2020-04-28T16:16:36.490Z] [iam] checking project watermelon-market for permissions ["firebase.projects.get"]
+[debug] [2020-04-28T16:16:36.493Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/watermelon-market:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-28T16:16:38.165Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:16:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=644","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-28T16:16:38.167Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/watermelon-market  
+ 
+[debug] [2020-04-28T16:16:39.411Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:16:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Coding Academy\robinhood\backend'...
+[info] 
+[debug] [2020-04-28T16:16:39.477Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/watermelon-market/webApps/-/config  
+ 
+[debug] [2020-04-28T16:16:40.959Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:16:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-04-28T16:16:42.869Z] Error: Cannot find module 'D:\Coding Academy\robinhood\backend\functions\package.json'
+Require stack:
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at FunctionsEmulator.<anonymous> (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:345:25)
+    at Generator.next (<anonymous>)
+    at C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:4:12)
+    at FunctionsEmulator.askInstallNodeVersion (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:344:16)
+    at FunctionsEmulator.<anonymous> (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:104:42)
+    at Generator.next (<anonymous>)
+    at C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:4:12)
+    at FunctionsEmulator.start (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:103:16)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-28T16:16:56.921Z] ----------------------------------------------------------------------
+[debug] [2020-04-28T16:16:56.924Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-28T16:16:56.925Z] CLI Version:   8.2.0
+[debug] [2020-04-28T16:16:56.925Z] Platform:      win32
+[debug] [2020-04-28T16:16:56.925Z] Node Version:  v12.16.1
+[debug] [2020-04-28T16:16:56.927Z] Time:          Tue Apr 28 2020 19:16:56 GMT+0300 (Israel Daylight Time)
+[debug] [2020-04-28T16:16:56.927Z] ----------------------------------------------------------------------
+[debug] [2020-04-28T16:16:56.928Z] 
+[debug] [2020-04-28T16:16:56.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-28T16:16:56.941Z] > authorizing via signed-in user
+[debug] [2020-04-28T16:16:56.941Z] [iam] checking project watermelon-market for permissions ["firebase.projects.get"]
+[debug] [2020-04-28T16:16:56.945Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/watermelon-market:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-28T16:16:58.720Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:16:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=640","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-28T16:16:58.725Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/watermelon-market  
+ 
+[debug] [2020-04-28T16:16:59.894Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:17:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Coding Academy\robinhood\backend'...
+[info] 
+[debug] [2020-04-28T16:16:59.901Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/watermelon-market/webApps/-/config  
+ 
+[debug] [2020-04-28T16:17:01.464Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 28 Apr 2020 16:17:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: build
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-04-28T16:17:02.982Z] Error: Cannot find module 'D:\Coding Academy\robinhood\backend\functions\package.json'
+Require stack:
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at FunctionsEmulator.<anonymous> (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:345:25)
+    at Generator.next (<anonymous>)
+    at C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:4:12)
+    at FunctionsEmulator.askInstallNodeVersion (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:344:16)
+    at FunctionsEmulator.<anonymous> (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:104:42)
+    at Generator.next (<anonymous>)
+    at C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:4:12)
+    at FunctionsEmulator.start (C:\Users\yarin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:103:16)
+[error] 
+[error] Error: An unexpected error has occurred.
